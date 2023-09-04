@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EGNTechs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your CSS styling here */
+        body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for the services list */
+#services ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Contact links styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+        #logo {
+            max-width: 150px; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+
+        /* Styles for the image slider */
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo placeholder -->
+        <img id="logo" src="C:\Users\HP\Documents\EGN TECHS WEB\EGNLOGO.png" alt="EGNTechs Logo" height="40px"     <h1>EGNTechs</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#view">View</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image slider section -->
+    <section id="home">
+        <h2>Welcome to EGNTechs</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="C:\Users\HP\Documents\EGN TECHS WEB\Information-technology-big-data-collection-complex (1).jpg" alt="Image 1"></div>
+                <div class="slide"><img src="C:\Users\HP\Documents\EGN TECHS WEB\Blue Minimalist Computer Repair Specialist Instagram Post (1).jpg" alt="Image 2"></div>
+                <div class="slide"><img src="C:\Users\HP\Documents\EGN TECHS WEB\CCTV Installation Services Flyer - Made with PosterMyWall.jpg" alt="Image 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="view">
+        <h2>View</h2>
+        <!-- Add your content here -->
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <!-- Add your content here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 0708315643</p>
+        <p>Email: egntech@gmail.com</p>
+        <!-- Add your contact form here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 EGNTechs. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for image slider
+        const slider = document.querySelector('.slider');
+        let slideIndex = 0;
+
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= slider.children.length) {
+                slideIndex = 0;
+            }
+            slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+            setTimeout(showSlides, 10000); // Change slide every 3 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
